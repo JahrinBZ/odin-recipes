@@ -1,0 +1,23 @@
+.title{
+font: 700;
+font-size: 32;
+display: block;
+text-align: center;
+background-color: #FFB090;
+margin: auto;
+}
+
+body {
+  background: #FFF1D3;
+  font-family: sans-serif;
+}
+.cards{
+    background-color: #FFB090;
+    font: 400;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+
+
+}
