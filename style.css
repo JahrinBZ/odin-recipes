@@ -1,23 +1,162 @@
+/* ==========================
+   Cute Pixel Theme
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Pixelify Sans', sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #ffeef8,
+        #fdf8ff,
+        #f5fff8
+    );
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:60px;
+}
+
+
+/* Title */
+
 .title{
-font: 700;
-font-size: 32;
-display: block;
-text-align: center;
-background-color: #FFB090;
-margin: auto;
+
+    font-size:55px;
+
+    color:#ff6fa7;
+
+    margin-bottom:50px;
+
+    text-shadow:
+        3px 3px #ffffff,
+        5px 5px #ffc7dc;
+
 }
 
-body {
-  background: #FFF1D3;
-  font-family: sans-serif;
+
+/* Recipe List */
+
+ul{
+
+    list-style:none;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:35px;
+
+    width:90%;
+
+    max-width:900px;
 }
+
+
+/* Card */
+
 .cards{
-    background-color: #FFB090;
-    font: 400;
-    font-size: 16px;
-    margin: 10px;
-    padding: 10px;
-    border: 10px;
 
+    background:#fffafc;
+
+    border:4px solid #ffc7dc;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    8px 8px #ffd8e8,
+
+    12px 12px 0px #ffffff;
+
+    transition:.3s;
+
+    overflow:hidden;
+
+}
+
+
+/* Card Hover */
+
+.cards:hover{
+
+    transform:
+    translateY(-8px)
+    rotate(-1deg);
+
+    box-shadow:
+
+    12px 12px #ffb5cf,
+
+    16px 16px white;
+
+}
+
+
+/* Links */
+
+.cards a{
+
+    text-decoration:none;
+
+    color:#7b4b5a;
+
+    display:block;
+
+    padding:40px;
+
+    text-align:center;
+
+    font-size:28px;
+
+}
+
+
+/* Hover */
+
+.cards a:hover{
+
+    color:#ff5b95;
+}
+
+
+/* Cute emoji */
+
+.cards::before{
+
+    content:"🍓";
+
+    font-size:32px;
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+
+/* Footer space */
+
+body::after{
+
+    content:"✨ ⭐ 🌸 🍰 🩷";
+
+    font-size:25px;
+
+    margin-top:60px;
 
 }

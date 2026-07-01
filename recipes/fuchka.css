@@ -1,0 +1,133 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Pixelify Sans',sans-serif;
+    background:linear-gradient(135deg,#fff4f8,#ffe9f3,#fff9e8);
+    color:#5b3f4d;
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+    line-height:1.8;
+}
+
+/* Floating background */
+body::before{
+    content:"🍓 ✨ 🌸 ⭐ 🍓 ✨";
+    position:fixed;
+    top:20px;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:22px;
+    opacity:.2;
+    pointer-events:none;
+}
+
+/* Home Button */
+.home{
+    display:inline-block;
+    text-decoration:none;
+    background:#ff8eb5;
+    color:white;
+    padding:12px 24px;
+    border-radius:15px;
+    border:3px solid white;
+    box-shadow:5px 5px #ffd0e1;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.home:hover{
+    background:#ff5f96;
+    transform:translateY(-3px);
+}
+
+/* Title */
+h1{
+    text-align:center;
+    font-size:55px;
+    color:#ff4f8f;
+    margin-bottom:25px;
+    text-shadow:3px 3px white,
+                6px 6px #ffd6e6;
+}
+
+/* Image */
+img{
+    display:block;
+    width:320px;
+    max-width:100%;
+    margin:25px auto;
+    border-radius:25px;
+    border:5px solid white;
+    box-shadow:8px 8px #ffd7e8;
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.05) rotate(-2deg);
+}
+
+/* Section Headings */
+h2,
+h3{
+    color:#ff6ea8;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+h2::before{
+    content:"🥣 ";
+}
+
+h3::before{
+    content:"🍴 ";
+}
+
+/* Description */
+p{
+    background:white;
+    padding:18px;
+    border-radius:18px;
+    border:3px solid #ffd7e6;
+    box-shadow:5px 5px #fff0f6;
+}
+
+/* Lists */
+ul,
+ol{
+    background:white;
+    padding:20px 40px;
+    margin-top:15px;
+    border-radius:20px;
+    border:3px solid #ffe0ea;
+    box-shadow:5px 5px #fff2f7;
+}
+
+li{
+    margin:10px 0;
+    transition:.3s;
+}
+
+li:hover{
+    color:#ff4f8f;
+    transform:translateX(8px);
+}
+
+/* Cute Footer */
+body::after{
+    content:"🍓 ✨ Enjoy Your Fuchka! ✨ 🍓";
+    display:block;
+    text-align:center;
+    margin-top:40px;
+    font-size:24px;
+    color:#ff5f96;
+}

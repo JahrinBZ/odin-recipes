@@ -1,11 +1,123 @@
-body {
-  background: #FFF1D3;
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Pixelify Sans',sans-serif;
+    background:linear-gradient(135deg,#fff8df,#f0fff0,#fff4f8);
+    color:#4f3d35;
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+    line-height:1.8;
+}
+
+body::before{
+    content:"🥔 ✨ 🌶️ 🍋 🥣 ✨";
+    position:fixed;
+    top:20px;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:22px;
+    opacity:.2;
+    pointer-events:none;
+}
+
+.home{
+    display:inline-block;
+    text-decoration:none;
+    background:#f0a33a;
+    color:white;
+    padding:12px 24px;
+    border-radius:15px;
+    border:3px solid white;
+    box-shadow:5px 5px #ffe0a8;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.home:hover{
+    background:#df7f16;
+    transform:translateY(-3px);
 }
 
 h1{
-    margin: auto;
-    padding: 10px;
-    border: 10px;
-    background-color: #CA5995;
+    text-align:center;
+    font-size:55px;
+    color:#df7f16;
+    margin-bottom:25px;
+    text-shadow:3px 3px white,
+                6px 6px #ffe0a8;
+}
+
+img{
+    display:block;
+    width:320px;
+    max-width:100%;
+    margin:25px auto;
+    border-radius:25px;
+    border:5px solid white;
+    box-shadow:8px 8px #d4efbd;
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.05) rotate(2deg);
+}
+
+h2,
+h3{
+    color:#67a548;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+h2::before{
+    content:"🥣 ";
+}
+
+h3::before{
+    content:"🍴 ";
+}
+
+p{
+    background:white;
+    padding:18px;
+    border-radius:18px;
+    border:3px solid #ffe0a8;
+    box-shadow:5px 5px #fff3d8;
+}
+
+ul,
+ol{
+    background:white;
+    padding:20px 40px;
+    margin-top:15px;
+    border-radius:20px;
+    border:3px solid #d4efbd;
+    box-shadow:5px 5px #f4ffe8;
+}
+
+li{
+    margin:10px 0;
+    transition:.3s;
+}
+
+li:hover{
+    color:#df7f16;
+    transform:translateX(8px);
+}
+
+body::after{
+    content:"🥔 ✨ Enjoy Your Chotpoti! ✨ 🌶️";
+    display:block;
+    text-align:center;
+    margin-top:40px;
+    font-size:24px;
+    color:#df7f16;
 }

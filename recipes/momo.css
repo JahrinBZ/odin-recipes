@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Pixelify Sans',sans-serif;
+    background:linear-gradient(135deg,#f3fbff,#fff7f0,#f7fff4);
+    color:#394550;
+    max-width:900px;
+    margin:40px auto;
+    padding:30px;
+    line-height:1.8;
+}
+
+body::before{
+    content:"🥟 ✨ 🥢 🍜 🥟 ✨";
+    position:fixed;
+    top:20px;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:22px;
+    opacity:.2;
+    pointer-events:none;
+}
+
+.home{
+    display:inline-block;
+    text-decoration:none;
+    background:#6aa7d8;
+    color:white;
+    padding:12px 24px;
+    border-radius:15px;
+    border:3px solid white;
+    box-shadow:5px 5px #c8e8ff;
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.home:hover{
+    background:#408cc4;
+    transform:translateY(-3px);
+}
+
+h1{
+    text-align:center;
+    font-size:55px;
+    color:#408cc4;
+    margin-bottom:25px;
+    text-shadow:3px 3px white,
+                6px 6px #c8e8ff;
+}
+
+img{
+    display:block;
+    width:320px;
+    max-width:100%;
+    margin:25px auto;
+    border-radius:25px;
+    border:5px solid white;
+    box-shadow:8px 8px #ffd9be;
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.05) rotate(-2deg);
+}
+
+h2,
+h3,
+h4{
+    color:#e17b47;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+h2::before{
+    content:"🥣 ";
+}
+
+h3::before{
+    content:"🍴 ";
+}
+
+h4::before{
+    content:"🥢 ";
+}
+
+p{
+    background:white;
+    padding:18px;
+    border-radius:18px;
+    border:3px solid #c8e8ff;
+    box-shadow:5px 5px #edf8ff;
+}
+
+ul,
+ol{
+    background:white;
+    padding:20px 40px;
+    margin-top:15px;
+    border-radius:20px;
+    border:3px solid #ffd9be;
+    box-shadow:5px 5px #fff1e8;
+}
+
+li{
+    margin:10px 0;
+    transition:.3s;
+}
+
+li:hover{
+    color:#408cc4;
+    transform:translateX(8px);
+}
+
+body::after{
+    content:"🥟 ✨ Enjoy Your Momo! ✨ 🥢";
+    display:block;
+    text-align:center;
+    margin-top:40px;
+    font-size:24px;
+    color:#408cc4;
+}
